@@ -1,0 +1,990 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh; 
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: rgb(195 114 254);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index:  1000;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0px;
+    border-radius: 50%;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block ; 
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.1s ;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #f1f1f1;
+}
+
+section nav .icon .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+
+section nav .icon i{
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #ffffff;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .men_text h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+    margin-bottom: 75px;
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #C372FE;
+    line-height: 22px;
+    font-size: 50px;
+
+}
+
+section .main .main_image img{
+    margin-top: 75px;
+    width: 650px;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+section p{
+    left: 50px;
+    width: 350px;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    line-height: 22px;;
+}
+
+section .main_btn{
+    background-color: #C372FE;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    width: 175px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn a{
+    color:white;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+
+section .main_btn i{
+    color: white;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+/* RECETA DE LA SEMANA */
+
+.receta{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    margin-bottom: 130px;
+}
+
+.receta .receta_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.receta .receta_main .image img{
+    width: 650px;
+    position: relative;  
+    top: 60px;
+}
+
+.receta .receta_main .texto_receta h2{
+    text-align: center;
+    font-size: 45px;
+}
+
+.receta .receta_main .texto_receta h2 span{
+    font-size: 55px;
+    color: #C372FE;
+    margin-right: 30px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.receta .receta_main .texto_receta h3{
+    font-size: 35px;
+    color: #C372FE;
+    margin-right: 25px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.receta .receta_main .texto_receta p{
+    margin-bottom: 10px;
+    width: 650px;
+    text-align: justify;
+    font-size: 20px ;
+    margin-left: 30px;
+    line-height: 25px;
+}
+
+.receta .receta_main .texto_receta span{
+    color: #C372FE;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.receta .btn{
+    text-align:start;
+}
+
+.receta .receta_btn{
+    background: #C372FE;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 55%;
+    bottom: -35px;
+}
+
+/* Nuestras delicias */
+
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.menu h2{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+    color: #C372FE;
+}
+
+.menu h3{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #C372FE;
+}
+
+.menu h2 span{
+    font-family: 'Pacifico', cursive;    
+    color: #C372FE;
+    margin-left: 15px;
+}
+
+.menu h3 span{
+    font-family: 'Pacifico', cursive;    
+    color: #C372FE;
+    margin-left: 15px;
+}
+
+.menu h2 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #C372FE;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .menu_box{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card{
+    width: 325px;
+    height: 530px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image.menu_image:hover img{
+    transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240;
+    right: 20px;
+    opacity: 1;
+}
+
+.menu .menu_box .menu_card:hover .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+
+.menu .menu_box .menu_card:hover .small_card i:hover{
+    color: #C372FE;
+}
+
+
+.menu .menu_box .menu_card .menu_info h3{
+    font-family: 'Pacifico', cursive;
+    width: 60%;
+    text-align: center;
+    margin: 10px 60px 10px auto;
+    font-size: 25px;
+    color: #C372FE;
+}
+
+.menu .menu_box .menu_card .menu_info p{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+    line-height: 21px;
+
+}
+
+.menu .menu_box .menu_card .menu_info h4{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon{
+    color: #C372FE;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+/* .menu .menu_box .menu_card .boton{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+} */
+
+
+/* ---------------------------------Galeria---------------------------------*/
+
+.gallary{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallary h2{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary h2 span{
+    margin-left: 15px;
+    color: #C372FE;
+    font-family: 'Pacifico', cursive;
+}
+
+.gallary h2 span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #C372FE;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallary .gallary_image_box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallary .gallary_image_box .gallary_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+.gallary .gallary_image_box .gallary_image img{
+    width: 100%;
+    transition: .3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover img{
+    opacity: 0.4;
+}
+
+.gallary .gallary_image_box .gallary_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #C372FE;
+    font-family: 'Pacifico', cursive;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover h3{
+    opacity: 1;
+}
+
+
+/* ACA DEBO MODIFICAR PARA DEJAR TODO CENTRADO */
+.gallary .gallary_image_box .gallary_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+    
+}
+
+.gallary .gallary_image_box .gallary_image:hover p{
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image .gallary_btn{
+    position: absolute;
+    margin-top: 180px;
+    /* margin-right: 90px; */
+    color: #000;
+    background-color: #C372FE;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translate(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* -------------------------- CONTACTANOS --------------------------*/
+
+.order{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    /* background-image: url(#);
+    background-size: cover;
+    background-position: center; */
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C372FE;
+    font-size: 55px;
+}
+
+.order h1 span{
+    font-family: 'Pacifico', cursive;
+    margin-left: 15px;
+}
+
+.order h1 span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #C372FE;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .order_main .order_image img{
+    width: 500px;
+}
+
+.order .order_main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.order .order_main form p{
+    line-height: 25px;
+}
+
+.order .order_main form .input{
+    margin: 5px;
+}
+
+.order .order_main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid;
+    background-color:rgba(175,0,255,0.3);
+    outline: none;
+    border-radius: 3px;
+}
+
+.order .order_main form .input input:focus{
+    border: 2px solid #2d0097;
+}
+
+.order .order_main form .order_btn{
+    padding: 10px 0;
+    background-color: #C372FE;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+/* -------------------------- NUESTRO EQUIPO --------------------------*/
+
+.team{
+    width: 100%;
+    height: 90vh;
+    /* background-image: url(#); */
+    /* background-size: cover;
+    background-position: center;  */
+}
+
+.team h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.team h2 span{
+    color: #C372FE;
+    margin-left: 15px;
+}
+
+.team h2 span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #C372FE;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}
+
+.team .team_box .profile{
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 630px;
+}
+
+
+.team .team_box .profile img{
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+    top:60%;
+}
+
+.team .team_box .profile .info .name{
+    color: #C372FE;
+    margin: 23px 0 0 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.team .team_box .profile .info .bio{
+    font-size: 15px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.team .team_box .profile .info .team_icon i{
+    font-size: 20px;
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+    color: #C372FE;
+}
+
+
+/* -------------------------- PREGUNTAS FRECUENTES --------------------------*/
+
+.preguntasFrecuentes{
+    margin-top: 250px;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.preguntasFrecuentes h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.preguntasFrecuentes h2 span{
+    font-family: 'Pacifico', cursive;
+    color: #C372FE;
+    margin-left: 15px;
+}
+
+.preguntasFrecuentes h2 span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #C372FE;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.preguntasFrecuentes .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: rgb(195, 114, 254);
+    font-weight: bold;
+}
+
+.preguntasFrecuentes .faq-container{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.faq{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 0, 221, 0.1);
+    overflow: hidden;
+}
+
+
+.faq h3{
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: rgb(195, 114, 254);
+    cursor: pointer;
+}
+
+/* .preguntasFrecuentes .faq-container .faq .question h3{
+    padding: 15px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+} */
+
+.faq .answer {
+    padding: 15px;
+    background-color: #fff;
+    display: none;
+}
+
+.faq .answer p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.show-answer {
+    background-color: rgb(118, 8, 196)!important;
+}
+
+.slide-down {
+    animation: slide-down 0.3s;
+}
+
+@keyframes slide-down {
+    from {
+    max-height: 0;
+    opacity: 0;
+    }
+    to {
+    max-height: 500px;
+    opacity: 1;
+    }
+}
+
+/* -------------------------- Footer --------------------------*/
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background: #d2bfe0;
+}
+
+footer .footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+footer .footer-main .footer_tag{
+    text-align: center;
+
+}
+
+footer .footer-main .footer_tag h2{
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+footer .footer-main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer-main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 45px;
+}
+
+footer .footer-main .footer_tag i:hover{
+    color: #C372FE;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+footer .end span{
+    color: #1800f3;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #C372FE;
+    border-radius: 15px;
+}
+
+/* Estilos del carrito */
+
+section .menu h2{
+    margin-top: 50px;
+}
+
+.contenedor-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section .contenedor-carrito .carrito-vacio{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+section .contenedor-carrito .carrito-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section .contenedor-carrito .carrito-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(189, 187, 190, 0.3);
+    color: #000000;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+}
+
+section .contenedor-carrito .carrito-producto-imagen{
+    width: 12rem;
+    border-radius: 1rem;
+}
+
+.contenedor-carrito .carrito-producto small{
+    font-size: 1rem;
+}
+
+.contenedor-carrito .carrito-producto .carrito-producto-titulo h3{
+    font-size: 2rem;
+    color: #000000;
+}
+
+.carrito-producto-eliminar{
+    color: #000;
+}
+
+.carrito-acciones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-acciones-vaciar{
+    border: 0;
+    background-color: #ac8ff0;
+    padding: 1rem;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito-producto .menu_btn{
+    border: 0;
+    background-color: #ac8ff0;
+    padding: 1rem;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito-acciones-derecha{
+    display: flex;
+
+}
+
+.carrito-acciones-comprar{
+    border: 0;
+    background-color: #ac8ff0;
+    padding: 1rem;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
